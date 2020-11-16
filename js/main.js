@@ -16,9 +16,9 @@ $(document).ready(function () {
         }
     )
 
-    var table = $('#myTable').DataTable({
+    var table = $('#DiToDr').DataTable({
         ajax: {
-            'url':'MOCK_DATA.json', 
+            'url':'DIS_DRG_test.json', 
             //'type': 'POST',
             'dataSrc':''
         },
@@ -26,24 +26,24 @@ $(document).ready(function () {
         orderMulti: true,
         order : [[1, 'desc']],
         columns: [
-            {"data": "id"},
-            {"data": "first_name"},
-            {"data": "last_name"}, 
-            {"data": "email"}, 
-            {"data": "gender"}, 
-            {"data": "date"},
-            {"data": "ip_address",
-                "render": function(data, type, row){
-                    /*
-                     * 다른 column의 값을 다루고 싶을 땐
-                     * row['COLUMN명'] 으로 꺼내쓸 수 있다.
-                     */
-                    if(type=='display'){
-                        data = '<a href="'+ data + '">' + data + '</a>';
-                    }
-                    return data;
-            }},
-            {"data":"money"}
+            {"data": "No"},
+            {"data": "disease"},
+            {"data": "drug"}, 
+            {"data": "PA"}, 
+            {"data": "corr"}, 
+//             {"data": "date"},
+//             {"data": "ip_address",
+//                 "render": function(data, type, row){
+//                     /*
+//                      * 다른 column의 값을 다루고 싶을 땐
+//                      * row['COLUMN명'] 으로 꺼내쓸 수 있다.
+//                      */
+//                     if(type=='display'){
+//                         data = '<a href="'+ data + '">' + data + '</a>';
+//                     }
+//                     return data;
+//             }},
+//             {"data":"money"}
         ],
         "language": {
             "emptyTable": "데이터가 없어요.",
@@ -62,14 +62,14 @@ $(document).ready(function () {
         },
         /* Footer에 금액총합 구하기,
          * filtered data 총합만 계산하도록 함.*/
-        "footerCallback":function(){
-            var api = this.api(), data;
-            var result = 0;
-            api.column(7, {search:'applied'}).data().each(function(data,index){
-                result += parseFloat(data);
-            });
-            $(api.column(3).footer()).html(result.toLocaleString()+'원');
-        },
+//         "footerCallback":function(){
+//             var api = this.api(), data;
+//             var result = 0;
+//             api.column(7, {search:'applied'}).data().each(function(data,index){
+//                 result += parseFloat(data);
+//             });
+//             $(api.column(3).footer()).html(result.toLocaleString()+'원');
+//         },
         dom : 'Blfrtip',
         buttons:[{
 			extend:'csvHtml5',
@@ -91,12 +91,13 @@ $(document).ready(function () {
         table.column(colIndex).search(this.value).draw();
     });
 
-    /* 날짜검색 이벤트 리바인딩 */
-    $('#myTable_filter').prepend('<input type="text" id="toDate" placeholder="yyyy-MM-dd"> ');
-    $('#myTable_filter').prepend('<input type="text" id="fromDate" placeholder="yyyy-MM-dd">~');
-    $('#toDate, #fromDate').unbind().bind('keyup',function(){
-        table.draw();
-    })
+//     /* 날짜검색 이벤트 리바인딩 */
+//     $('#myTable_filter').prepend('<input type="text" id="toDate" placeholder="yyyy-MM-dd"> ');
+//     $('#myTable_filter').prepend('<input type="text" id="fromDate" placeholder="yyyy-MM-dd">~');
+//     $('#toDate, #fromDate').unbind().bind('keyup',function(){
+//         table.draw();
+//     }
+//                                          )
 
 
 });
