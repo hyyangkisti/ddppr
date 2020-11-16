@@ -81,8 +81,8 @@ $(document).ready(function () {
     });
 
     /* Column별 검색기능 추가 */
-    $('#myTable_filter').prepend('<select id="select"></select>');
-    $('#myTable > thead > tr').children().each(function (indexInArray, valueOfElement) { 
+    $('#DiToDr_filter').prepend('<select id="select"></select>');
+    $('#DiToDr > thead > tr').children().each(function (indexInArray, valueOfElement) { 
         $('#select').append('<option>'+valueOfElement.innerHTML+'</option>');
     });
     
