@@ -23,7 +23,7 @@ $(document).ready(function () {
         },
         responsive: true,
         orderMulti: true,
-        order : [[1, 'desc']],
+        order : [[1, 'asc']],
         columns: [
             {"data": "disease"}
         ],
@@ -53,7 +53,7 @@ $(document).ready(function () {
         },
         responsive: true,
         orderMulti: true,
-        order : [[1, 'desc']],
+        order : [[1, 'asc']],
         columns: [
             {"data": "drug"}
         ],
@@ -83,7 +83,7 @@ $(document).ready(function () {
         },
         responsive: true,
         orderMulti: true,
-        order : [[1, 'desc']],
+        order : [[1, 'asc']],
         columns: [
             {"data": "protein"}
         ],
