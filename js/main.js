@@ -25,6 +25,7 @@ $(document).ready(function () {
         orderMulti: true,
         order : [[1, 'desc']],
         columns: [
+            {"data": "No"},
             {"data": "disease"}
         ],
         "language": {
@@ -55,6 +56,7 @@ $(document).ready(function () {
         orderMulti: true,
         order : [[1, 'desc']],
         columns: [
+            {"data": "No"},
             {"data": "drug"}
         ],
         "language": {
@@ -85,6 +87,7 @@ $(document).ready(function () {
         orderMulti: true,
         order : [[1, 'desc']],
         columns: [
+            {"data": "No"},
             {"data": "protein"}
         ],
         "language": {
