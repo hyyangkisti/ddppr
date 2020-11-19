@@ -44,8 +44,8 @@ $(document).ready(function () {
             }
         },
         dom : 'Blfrtip',
-//         buttons:[{
-// 		}]
+        buttons:[{
+		}]
     });
     var table = $('#DrugTB').DataTable({
         ajax: {
@@ -75,8 +75,8 @@ $(document).ready(function () {
             }
         },
         dom : 'Blfrtip',
-//         buttons:[{
-// 		}]
+        buttons:[{
+		}]
     });
     var table = $('#ProteinTB').DataTable({
         ajax: {
@@ -106,8 +106,8 @@ $(document).ready(function () {
             }
         },
         dom : 'Blfrtip',
-//         buttons:[{
-// 		}]
+        buttons:[{
+		}]
     });
 
     
