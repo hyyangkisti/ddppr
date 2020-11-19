@@ -13,6 +13,33 @@ input {
     margin: 50px auto;
 }
 
+.container {
+  position: relative;
+  display:table;
+  background: red;
+  width:100%;
+  height: 100%; /* auto is default, you can have ur height here */
+}
+
+.container-wrapper {
+  display: table-cell;
+  margin:auto;
+  text-align:center;
+  font-size:0;
+  width:90%;
+  height:90%;
+  vertical-align:middle;
+}
+
+.card {
+  display: inline-block;
+  height:100px;
+  width:100px;
+  border: 1px solid #ddd;
+  background: #eee;
+  margin:10px;
+}
+
 /* 검색창, 페이지당 select 등 input 관련 */
 .dataTables_wrapper .dataTables_filter input,
 select[name=myTable_length] {

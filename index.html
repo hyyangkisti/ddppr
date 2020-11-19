@@ -18,43 +18,50 @@
 	<script src="vendor/js/buttons.html5.min.js"></script>
     <script src="js/main.js"></script>
 </head>
-
+    
 <body>
     <div class="wrap">
         <h1>Diseases, Drugs and Proteins</h1>
-        <table id="DiseaseTB" class="display" style="width:30%;">
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>disease</th>
-                </tr>
-            </thead>
-            <tfoot>
-            </tfoot>
-        </table>
-<!--         <h1>Drug</h1> -->
-        <table id="DrugTB" class="display" style="width:30%;">
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>drug</th>
-                </tr>
-            </thead>
-            <tfoot>
-            </tfoot>
-        </table>
-<!--         <h1>Protein</h1> -->
-        <table id="ProteinTB" class="display" style="width:30%;">
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>protein</th>
-                </tr>
-            </thead>
-            <tfoot>
-            </tfoot>
-        </table>
-        
+        <div class="container-wrapper">
+            <div class="card">
+                <h2>Diseases</h2>
+                <table id="DiseaseTB" class="display" style="width:30%;">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>disease</th>
+                        </tr>
+                    </thead>
+                    <tfoot></tfoot>
+                </table>
+            </div>
+            
+            <div class="card">
+                <h2>Drugs</h2>
+                <table id="DrugTB" class="display" style="width:30%;">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>drug</th>
+                        </tr>
+                    </thead>
+                    <tfoot></tfoot>
+                </table>
+            </div>
+            
+            <div class="card">
+                <h2>Proteins</h2>
+                <table id="ProteinTB" class="display" style="width:30%;">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>protein</th>
+                        </tr>
+                    </thead>
+                    <tfoot></tfoot>
+                </table>
+            </div>
+        </div>
         
         <h1>Disease-Drug correlation</h1>
         <table id="DiToDr" class="display" style="width:100%;">
