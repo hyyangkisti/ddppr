@@ -19,14 +19,19 @@ $(document).ready(function () {
     
 // Get json data
 const url = './disease.json';
-var disease_list = [], _options;
+var options = [], _options;
+
 $.getJSON(url, function (data) {
   $.each(data, function (key, entry) {
-    disease_list.append($('<option></option>').attr('value', entry.No).text(entry.disease));
+//     disease_list.append($('<option></option>').attr('value', entry.No).text(entry.disease));
+      var option = '<option value="' + entry.disease + '">'entry.disease'</option>';
+      options.push(option);
   })
 });
+    
+_options = options.join('');
 // Item list
-$('#Diseases-dropdown')[0].innerHTML = disease_list
+$('#Diseases-dropdown')[0].innerHTML =  _options;
 // let dropdown = $('#Diseases-dropdown');
 
 // dropdown.empty();
