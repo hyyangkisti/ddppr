@@ -39,6 +39,27 @@
             <div class="card">
                 <h2>Diseases</h2>
                 <select class="selectpicker" id="Diseases-dropdown" name="Diseases" data-live-search="true"></select>
+                <div class="col-lg-5">
+                    <label>Standard</label>
+                    <div class="dropdown bootstrap-select form-control">
+                        <select class="selectpicker form-control" id="Diseases-dropdown" data-container="body" data-live-search="true" title="Select a number" data-hide-disabled="true" tabindex="-98"></select>
+                        <button type="button" class="btn dropdown-toggle btn-light bs-placeholder" data-toggle="dropdown" role="combobox" aria-owns="bs-select-2" aria-haspopup="listbox" aria-expanded="false" data-id="number" title="Select a number">
+                            <div class="filter-option">
+                                <div class="filter-option-inner">
+                                    <div class="filter-option-inner-inner">Choose Diseases</div>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="dropdown-menu ">
+                            <div class="bs-searchbox">
+                                <input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-2" aria-autocomplete="list">
+                            </div>
+                            <div class="inner show" role="listbox" id="bs-select-2" tabindex="-1">
+                                <ul class="dropdown-menu inner show" role="presentation"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 <!--                 <table id="DiseaseTB" class="display" style="width:95%;">
                     <thead>
                         <tr>
