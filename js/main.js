@@ -29,15 +29,14 @@ function loadSelectItems(select, items) {
     select.selectpicker('refresh');
 }
 const url = './disease.json';
-$.getJSON(url, function (items) {
-    loadSelectItems($('#Diseases-sp'), items)
-});
+$.getJSON(url, function (items) {loadSelectItems($('#Diseases-sp'), items)});
     
+// Action for select disease
 $(function() {
-  $('#Diseases-sp').on("changed.bs.select", 
-        function(e, clickedIndex) {
-      console.log(this.value, clickedIndex)
-  });
+    $('#Diseases-sp').on("changed.bs.select", function(e, clickedIndex) {
+        const drug_json = './drugs' + this.value + '.json';
+        $.getJSON(url, function (items) {loadSelectItems($('#Drugs-sp'), items)});  
+    });
 });
 
 
