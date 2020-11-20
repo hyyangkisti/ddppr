@@ -33,6 +33,8 @@ $.getJSON(url, function (items) {
     loadSelectItems($('#Diseases-sp'), items)
 });
 
+
+
 //     var table = $('#DiseaseTB').DataTable({
 //         ajax: {
 //             'url':'disease.json', 
