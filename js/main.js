@@ -32,7 +32,7 @@ function loadSelectItems(select, items) {
 function get_drugs(select, items) {
     var options = '';
     $.each(items, function(key, value) {
-        options += '<option value=' + value.drug + '>' + value.PA +' ' + value.corr + '</option>';
+        options += '<option value=' + value.drug + '>' + value.drug +', '+ value.PA +' ' + value.corr + '</option>';
     });
     select.empty();
     select.append(options);
@@ -44,7 +44,7 @@ $.getJSON(url, function (items) {loadSelectItems($('#Diseases-sp'), items)});
 // Action for select disease
 $(function() {
     $('#Diseases-sp').on("changed.bs.select", function(e, clickedIndex) {
-        const drug_json = './json/drug/drugs_' + this.value + '.json';
+        const drug_json = './json/drug/drugs_"' + this.value + '".json';
         $.getJSON(drug_json, function (items) {get_drugs($('#Drugs-sp'), items)});  
     });
 });
