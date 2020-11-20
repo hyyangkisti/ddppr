@@ -24,7 +24,7 @@ var options = [], _options;
 $.getJSON(url, function (data) {
   $.each(data, function (key, entry) {
 //     disease_list.append($('<option></option>').attr('value', entry.No).text(entry.disease));
-      var option = '<option value="' + entry.disease + '">'entry.disease'</option>';
+      var option = '<option value="' + entry.disease + '">' + entry.disease + '</option>';
       options.push(option);
   })
 });
