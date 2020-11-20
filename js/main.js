@@ -18,7 +18,6 @@ $(document).ready(function () {
 
     
 // Get json data
-
     
 function loadSelectItems(select, items) {
     var options = '';
@@ -33,31 +32,6 @@ const url = './disease.json';
 $.getJSON(url, function (items) {
     loadSelectItems($('#Diseases-sp'), items)
 });
-// var options = [], _options;
-
-// $.getJSON(url, function (data) {
-//   $.each(data, function (key, entry) {
-// //     disease_list.append($('<option></option>').attr('value', entry.No).text(entry.disease));
-//       var option = '<option value="' + entry.disease + '">' + entry.disease + '</option>';
-//       options.push(option);
-//   })
-// });
-    
-// _options = options.join('');
-// // Item list
-// $('#Diseases-dropdown')[0].innerHTML =  _options;
-// let dropdown = $('#Diseases-dropdown');
-
-// dropdown.empty();
-
-// dropdown.append('<option selected="true" disabled>Choose Diseases</option>');
-// dropdown.prop('selectedIndex', 0);
-
-
-
-// Populate dropdown with list of provinces
-
-    
 
 //     var table = $('#DiseaseTB').DataTable({
 //         ajax: {
