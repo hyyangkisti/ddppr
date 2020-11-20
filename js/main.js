@@ -16,22 +16,28 @@ $(document).ready(function () {
         }
     )
 
-// Item list
-let dropdown = $('#Diseases-dropdown');
-
-dropdown.empty();
-
-dropdown.append('<option selected="true" disabled>Choose Diseases</option>');
-dropdown.prop('selectedIndex', 0);
-
+    
+// Get json data
 const url = './disease.json';
-
-// Populate dropdown with list of provinces
+var disease_list = [], _options;
 $.getJSON(url, function (data) {
   $.each(data, function (key, entry) {
-    dropdown.append($('<option></option>').attr('value', entry.No).text(entry.disease));
+    disease_list.append($('<option></option>').attr('value', entry.No).text(entry.disease));
   })
 });
+// Item list
+$('#Diseases-dropdown')[0].innerHTML = disease_list
+// let dropdown = $('#Diseases-dropdown');
+
+// dropdown.empty();
+
+// dropdown.append('<option selected="true" disabled>Choose Diseases</option>');
+// dropdown.prop('selectedIndex', 0);
+
+
+
+// Populate dropdown with list of provinces
+
     
 
 //     var table = $('#DiseaseTB').DataTable({
