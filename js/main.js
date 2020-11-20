@@ -32,6 +32,13 @@ const url = './disease.json';
 $.getJSON(url, function (items) {
     loadSelectItems($('#Diseases-sp'), items)
 });
+    
+$(function() {
+  $('#Diseases-sp').on("changed.bs.select", 
+        function(e, clickedIndex) {
+      console.log(this.value, clickedIndex)
+  });
+});
 
 
 
