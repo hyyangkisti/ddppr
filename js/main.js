@@ -21,18 +21,18 @@ $(document).ready(function () {
 
     
 function loadSelectItems(select, items) {
-    const url = './disease.json';
     var options = '';
-    $.getJSON(url, function (items) {
-        $.each(items, function(key, value) {
-            options += '<option value=' + value.disease + '>' + value.disease + '</option>';
-        });
+    $.each(items, function(key, value) {
+        options += '<option value=' + value.disease + '>' + value.disease + '</option>';
     });
     select.empty();
     select.append(options);
     select.selectpicker('refresh');
 }
-    
+const url = './disease.json';
+$.getJSON(url, function (items) {
+    loadSelectItems($('#Diseases-sp'), items)
+});
 // var options = [], _options;
 
 // $.getJSON(url, function (data) {
