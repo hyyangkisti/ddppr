@@ -44,7 +44,7 @@ $.getJSON(url, function (items) {loadSelectItems($('#Diseases-sp'), items)});
 // Action for select disease
 $(function() {
     $('#Diseases-sp').on("changed.bs.select", function(e, clickedIndex) {
-        const drug_json = './drugs' + this.value + '.json';
+        const drug_json = './json/drug/drugs_' + this.value + '.json';
         $.getJSON(drug_json, function (items) {get_drugs($('#Drugs-sp'), items)});  
     });
 });
