@@ -33,7 +33,7 @@ input {
 
 .card {
   display: inline-block;
-  height:30%;
+  height:50%;
   width:30%;
   border: 1px solid #ddd;
   background: #eee;
