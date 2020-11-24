@@ -1,5 +1,4 @@
-$(document).ready(function () {
-    
+({  
     // Get json data    
     function loadSelectItems(select, items) {
         var options = '';
