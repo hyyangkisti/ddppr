@@ -63,24 +63,39 @@
     <div class="container">
         <h4>Disease</h4>
         <div class="form-group row">
-            <label>Diseases</label>
+            <label>Disease</label>
             <select class="selectpicker form-control" id="Diseases-sp" 
                     data-live-search="true" title="Select a disease" data-size="5"></select>
         </div>
     </div>
     
     <div class="container">
-        <h4>Drugs (with Pharmacological Action) and Proteins</h4>
+        <h4>Drug (with Pharmacological Action) and Protein</h4>
         <div class="form-group column">
             <label>Drug</label>
-<!--             <select class="selectpicker form-control" id="Diseases-sp" 
-                    data-live-search="true" title="Select a disease" data-size="5"></select> -->
-        </div>
-        
-        <div class="form-group column">
+            <table id="DrugTB" class="display" style="width:100%;">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>item</th>
+                        <th>PA</th>
+                        <th>corr</th>
+                    </tr>
+                </thead>
+                <tfoot><tr></tr></tfoot>
+            </table>
+            
             <label>Protein</label>
-<!--             <select class="selectpicker form-control" id="Diseases-sp" 
-                    data-live-search="true" title="Select a disease" data-size="5"></select> -->
+            <table id="ProteinTB" class="display" style="width:100%;">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>item</th>
+                        <th>corr</th>
+                    </tr>
+                </thead>
+                <tfoot><tr></tr></tfoot>
+            </table>
         </div>
     </div>
 </body>
