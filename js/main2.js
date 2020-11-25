@@ -90,9 +90,9 @@ $(document).ready(function () {
     
     
         /* Column별 검색기능 추가 */
-    $('#DrugTB_filter').prepend('<select id="select"></select>');
+    $('#DrugTB_filter').prepend('<select id="DrugTBselect"></select>');
     $('#DrugTB > thead > tr').children().each(function (indexInArray, valueOfElement) { 
-        $('#select').append('<option>'+valueOfElement.innerHTML+'</option>');
+        $('#DrugTBselect').append('<option>'+valueOfElement.innerHTML+'</option>');
     });
     
     $('.dataTables_filter input').unbind().bind('keyup', function () {
@@ -134,9 +134,9 @@ $(document).ready(function () {
 		}]
     });
         /* Column별 검색기능 추가 */
-    $('#ProteinTB_filter').prepend('<select id="select"></select>');
+    $('#ProteinTB_filter').prepend('<select id="ProteinTBselect"></select>');
     $('#ProteinTB > thead > tr').children().each(function (indexInArray, valueOfElement) { 
-        $('#select').append('<option>'+valueOfElement.innerHTML+'</option>');
+        $('#ProteinTBselect').append('<option>'+valueOfElement.innerHTML+'</option>');
     });
     
     $('.dataTables_filter input').unbind().bind('keyup', function () {
