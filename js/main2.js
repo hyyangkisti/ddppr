@@ -63,8 +63,8 @@ $(document).ready(function () {
         order : [[1, 'desc']],
         columns: [
             {"data": "No"},
-            {"data": "item"}
-            {"data": "PA"}
+            {"data": "item"},
+            {"data": "PA"},
             {"data": "corr"}
         ],
         "language": {
@@ -111,7 +111,7 @@ $(document).ready(function () {
         order : [[1, 'desc']],
         columns: [
             {"data": "No"},
-            {"data": "item"}
+            {"data": "item"},
             {"data": "corr"}
         ],
         "language": {
