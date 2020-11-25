@@ -3,7 +3,7 @@ $(document).ready(function () {
     function loadSelectItems(select, items) {
         var options = '';
         $.each(items, function(key, value) {
-            options += '<option value=' + value.disease + 'data-tokens=' + value.disease_tk + '>' + value.disease + '</option>';
+            options += '<option value=' + value.disease + 'data-tokens=' + value.disease_tk + 'data-subtext=' + value.No + '>' + value.disease + '</option>';
         });
         select.empty();
         select.append(options);
