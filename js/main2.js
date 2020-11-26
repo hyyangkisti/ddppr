@@ -30,8 +30,7 @@ $(document).ready(function () {
     $(function() {
         $('#Diseases-sp').on("changed.bs.select", function(e, clickedIndex) {
             const drug_json = 'json/drug/drugs_' + this.value + '.json';
-            
-            
+            const protein_json = 'json/protein/drugs_' + this.value + '.json';
             
             // ************* DRUG ***************
             $('#DrugTB').DataTable().destroy();
@@ -73,7 +72,7 @@ $(document).ready(function () {
             $('#ProteinTB').DataTable().destroy();
             var table = $('#ProteinTB').DataTable({
                 ajax: {
-                    'url':'json/protein/drugs_COVID_19.json', 
+                    'url':protein_json, 
                     'dataSrc':''
                 },
                 responsive: true,
