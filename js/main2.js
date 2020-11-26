@@ -38,8 +38,8 @@ $(document).ready(function () {
     // ************* ABOUT DATATABLES ***************
     
     
-    $('#table').dataTable().fnClearTable(); 
-    $('#table').dataTable().fnAddData(data);
+//     $('#table').dataTable().fnClearTable(); 
+//     $('#table').dataTable().fnAddData(data);
     
     $.fn.dataTable.ext.search.push(
         function(settings, data, dataIndex){
