@@ -3,7 +3,7 @@ $(document).ready(function () {
     function loadSelectItems(select, items) {
         var options = '';
         $.each(items, function(key, value) {
-            options += '<option value=' + value.disease + ' data-tokens=' + value.disease_tk + ' data-subtext=' + value.No + '>' + value.disease + '</option>';
+            options += '<option value=' + value.disease_tk + ' data-tokens=' + value.disease + ' data-subtext=' + value.No + '>' + value.disease + '</option>';
         });
         select.empty();
         select.append(options);
@@ -36,6 +36,11 @@ $(document).ready(function () {
 
     
     // ************* ABOUT DATATABLES ***************
+    
+    
+    $('#table').dataTable().fnClearTable(); 
+    $('#table').dataTable().fnAddData(data);
+    
     $.fn.dataTable.ext.search.push(
         function(settings, data, dataIndex){
             var min = Date.parse($('#fromDate').val());
