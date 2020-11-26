@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Disease Drug Protein Potential Relationship based on machine learning analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/bootstrap-select.css">
+		
+		<link rel="stylesheet" type="text/css" href="assets/vendor/css/jquery.dataTables.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendor/css/responsive.dataTables.min.css">
+		
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	</head>
+	<body class="is-preload">
+	
+		<!-- Wrapper -->
+			<div id="wrapper">
+	
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/icon.png" alt="" /></span>
+						<h1>Disease Drug Protein Potential Relationship based on machine learning analysis</h1>
+						<p>This Disease-Drug-Protein potential relationship is exported <br>
+	        from Word Embedding model with PubMed 10 Years (2010~2019). <br>
+	        The results here are specific to RNA virus-related diseases including COVID-19. <br></p>
+					</header>
+	
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#introduction_div" class="active">Introduction</a></li>
+							<li><a href="#disease_sec">Disease</a></li>
+							<li><a href="#corr_sec">Correlation</a></li>
+						</ul>
+					</nav>
+	
+				<!-- Main -->
+					<div id="main">
+	
+						<!-- Introduction -->
+							<section id="introduction_sec" class="main special">
+								<header class="major">
+									<h2>Data</h2>
+									<ul class="statistics">
+										<li class="style1">
+											<span class="icon solid"><img src="images/disease_white.png" alt="" /></span>
+											<strong>141</strong> Disease
+										</li>
+										<li class="style2">
+											<span class="icon"><img src="images/drug_white.png" alt="" /></span>
+											<strong>437</strong> Drug
+										</li>
+										<li class="style3">
+											<span class="icon solid"><img src="images/protein_white.png" alt="" /></span>
+											<strong>3,732</strong> Protein
+										</li>
+									</ul>
+									<p>Data is extracted from Word Embedding model with PubMed 10 Years (2010~2019).<br />
+									</p>
+								</header>
+								
+								<footer class="major">
+								</footer>
+							</section>
+	
+						<!-- Disease -->
+							<section id="disease_sec" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Disease</h2>
+										</header>
+										<p>Select a disease for reload the correlations with drugs and proteins.</p>
+										<ul class="actions">
+											<select class="selectpicker form-control" id="Diseases-sp" data-live-search="true" title="Select a disease" data-size="10" data-width="auto"></select>
+										</ul>
+									</div>
+									<span class="logo"><img src="images/disease.png" alt="" /></span>
+								</div>
+							</section>
+	
+						<!-- Drug -->
+							<section id="corr_sec" class="main special">
+								<header class="major">
+									<h2>Correlation</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="logo solid major style1"><img src="images/drug.png" alt="" /></span>
+										<h3>Drug (with Pharmacological Action)</h3>
+										<table id="DrugTB" class="display" style="width:40%;">
+											<thead>
+												<tr>
+													<th>No</th>
+													<th>item</th>
+													<th>PA</th>
+													<th>corr</th>
+												</tr>
+											</thead>
+											<tfoot><tr></tr></tfoot>
+										</table>
+									</li>
+									<li>
+										<span class="logo major style3"><img src="images/protein.png" alt="" /></span>
+										<h3>Protein</h3>
+										<table id="DrugTB" class="display" style="width:40%;">
+											<thead>
+												<tr>
+													<th>No</th>
+													<th>item</th>
+													<th>corr</th>
+												</tr>
+											</thead>
+											<tfoot><tr></tr></tfoot>
+										</table>
+									</li>
+								</ul>
+								<footer class="major">
+								</footer>
+							</section>
+					</div>
+	
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Director</h2>
+							<dl class="alt">
+								<dt>Office</dt>
+								<dd>66 Hoegiro, Dongdaemun-gu, Seoul, 02456, Korea</dd>
+								<dt>Email</dt>
+								<dd><a href="#">hyyang@kisti.re.kr</a></dd>
+							</dl>
+						</section>
+						<p class="copyright">&copy; KISTI, Future Technology Information Analysis Center. Design: <a href="https://kimyoungjin06.github.io/home">Young Jin Kim</a>.</p>
+					</footer>
+	
+			</div>
+	
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+			<script src="assets/js/bootstrap-select.js"></script>
+			<script src="assets/js/my-script.js"></script>
+	
+	</body>
+</html>
