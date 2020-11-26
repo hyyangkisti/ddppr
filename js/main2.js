@@ -34,6 +34,7 @@ $(document).ready(function () {
             
             
             // ************* DRUG ***************
+            $('#DrugTB').DataTable().destroy();
             var table = $('#DrugTB').DataTable({
                 ajax: {
                     'url':drug_json, 
