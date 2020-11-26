@@ -41,7 +41,7 @@ $(document).ready(function () {
                 },
                 responsive: true,
                 orderMulti: true,
-                order : [[1, 'desc']],
+                order : [[0, 'asc']],
                 columns: [
                     {"data": "No"},
                     {"data": "item"},
@@ -77,7 +77,7 @@ $(document).ready(function () {
                 },
                 responsive: true,
                 orderMulti: true,
-                order : [[1, 'desc']],
+                order : [[0, 'asc']],
                 columns: [
                     {"data": "No"},
                     {"data": "item"},
