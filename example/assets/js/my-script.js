@@ -212,7 +212,8 @@ $(document).ready(function () {
     var PRtable = $('#ProteinTB').DataTable({
         ajax: {
             'url':'json/protein/drugs_COVID_19.json', 
-            'dataSrc':''
+            'dataSrc':'',
+            "scrollX": true
         },
         responsive: true,
         orderMulti: true,
