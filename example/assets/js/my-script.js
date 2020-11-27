@@ -101,7 +101,7 @@ $(document).ready(function () {
                 buttons:[{
                 }]
             });
-            $('#DrugTB').DataTable().ajax.reload();
+            $('#ProteinTB').DataTable().ajax.reload();
             
                     /* Column별 검색기능 추가 */
             $('#ProteinTB_filter').prepend('<select id="ProteinTBselect"></select>');
