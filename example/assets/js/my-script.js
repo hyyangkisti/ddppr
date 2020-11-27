@@ -205,7 +205,13 @@ $(document).ready(function () {
         columns: [
             {"data": "No"},
             {"data": "item"},
-            {"data": "corr"}
+            {"data": "corr"
+                "render": function(data, type, row, meta) {
+                    return type === 'display' ?
+                        '<corr value="' + data + '" max="1"></corr>' :
+                        data;
+                }
+            }
         ],
         "language": {
             "emptyTable": "No table.",
