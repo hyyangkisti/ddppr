@@ -34,7 +34,12 @@ $(document).ready(function () {
                     {"data": "No"},
                     {"data": "item"},
                     {"data": "PA"},
-                    {"data": "corr"}
+                    {"data": "corr",
+                        "render": function(data, type, row, meta) {
+                            return type === 'display' ?
+                                '<progress value="' + data + '" max="1"></progress>' :
+                                data;
+                    }}
                 ],
                 "language": {
                     "emptyTable": "No table.",
@@ -80,7 +85,12 @@ $(document).ready(function () {
                 columns: [
                     {"data": "No"},
                     {"data": "item"},
-                    {"data": "corr"}
+                    {"data": "corr",
+                        "render": function(data, type, row, meta) {
+                            return type === 'display' ?
+                                '<progress value="' + data + '" max="1"></progress>' :
+                                data;
+                    }}
                 ],
                 "language": {
                     "emptyTable": "No table.",
@@ -157,7 +167,12 @@ $(document).ready(function () {
             {"data": "No"},
             {"data": "item"},
             {"data": "PA"},
-            {"data": "corr"}
+            {"data": "corr",
+                "render": function(data, type, row, meta) {
+                    return type === 'display' ?
+                        '<progress value="' + data + '" max="1"></progress>' :
+                        data;
+            }}
         ],
         "language": {
             "emptyTable": "No table.",
@@ -205,13 +220,12 @@ $(document).ready(function () {
         columns: [
             {"data": "No"},
             {"data": "item"},
-            {"data": "corr"
+            {"data": "corr",
                 "render": function(data, type, row, meta) {
                     return type === 'display' ?
-                        '<corr value="' + data + '" max="1"></corr>' :
+                        '<progress value="' + data + '" max="1"></progress>' :
                         data;
-                }
-            }
+            }}
         ],
         "language": {
             "emptyTable": "No table.",
