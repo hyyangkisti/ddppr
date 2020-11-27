@@ -22,7 +22,7 @@ select label{ font-size: 6px; }
 }
 
 .features li {
-    width: calc(37% - 2em);
+    width: calc(37.5% - 2em);
     margin-left: .2em;
 /*     margin-top: 3em; */
 /*     padding: 0; */
