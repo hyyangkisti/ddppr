@@ -63,7 +63,7 @@ $(document).ready(function () {
                 $('#DrugTBselect').append('<option>'+valueOfElement.innerHTML+'</option>');
             });
 
-            $('.dataTables_filter input').unbind().bind('keyup', function () {
+            $('#DrugTB_filter input').unbind().bind('keyup', function () {
                 var colIndex = document.querySelector('#DrugTBselect').selectedIndex;
                 table.column(colIndex).search(this.value).draw();
             });
@@ -109,7 +109,7 @@ $(document).ready(function () {
                 $('#ProteinTBselect').append('<option>'+valueOfElement.innerHTML+'</option>');
             });
 
-            $('.dataTables_filter input').unbind().bind('keyup', function () {
+            $('#ProteinTB_filter input').unbind().bind('keyup', function () {
                 var colIndex = document.querySelector('#ProteinTBselect').selectedIndex;
                 table.column(colIndex).search(this.value).draw();
             });
@@ -188,7 +188,7 @@ $(document).ready(function () {
         $('#DrugTBselect').append('<option>'+valueOfElement.innerHTML+'</option>');
     });
     
-    $('.dataTables_filter input').unbind().bind('keyup', function () {
+    $('#DrugTB_filter input').unbind().bind('keyup', function () {
         var colIndex = document.querySelector('#DrugTBselect').selectedIndex;
         table.column(colIndex).search(this.value).draw();
     });
@@ -232,7 +232,7 @@ $(document).ready(function () {
         $('#ProteinTBselect').append('<option>'+valueOfElement.innerHTML+'</option>');
     });
     
-    $('.dataTables_filter input').unbind().bind('keyup', function () {
+    $('#ProteinTB_filter input').unbind().bind('keyup', function () {
         var colIndex = document.querySelector('#ProteinTBselect').selectedIndex;
         table.column(colIndex).search(this.value).draw();
     });
