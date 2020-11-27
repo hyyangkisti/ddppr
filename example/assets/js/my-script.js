@@ -57,6 +57,17 @@ $(document).ready(function () {
             });
             $('#DrugTB').DataTable().ajax.reload();
             
+                /* Column별 검색기능 추가 */
+            $('#DrugTB_filter').prepend('<select id="DrugTBselect"></select>');
+            $('#DrugTB > thead > tr').children().each(function (indexInArray, valueOfElement) { 
+                $('#DrugTBselect').append('<option>'+valueOfElement.innerHTML+'</option>');
+            });
+
+            $('.dataTables_filter input').unbind().bind('keyup', function () {
+                var colIndex = document.querySelector('#DrugTBselect').selectedIndex;
+                table.column(colIndex).search(this.value).draw();
+            });
+            
             $('#ProteinTB').DataTable().destroy();
             var table = $('#ProteinTB').DataTable({
                 ajax: {
@@ -91,6 +102,17 @@ $(document).ready(function () {
                 }]
             });
             $('#DrugTB').DataTable().ajax.reload();
+            
+                    /* Column별 검색기능 추가 */
+            $('#ProteinTB_filter').prepend('<select id="ProteinTBselect"></select>');
+            $('#ProteinTB > thead > tr').children().each(function (indexInArray, valueOfElement) { 
+                $('#ProteinTBselect').append('<option>'+valueOfElement.innerHTML+'</option>');
+            });
+
+            $('.dataTables_filter input').unbind().bind('keyup', function () {
+                var colIndex = document.querySelector('#ProteinTBselect').selectedIndex;
+                table.column(colIndex).search(this.value).draw();
+            });
 
 
              
