@@ -1,7 +1,11 @@
 th { font-size: 11px; }
 td { font-size: 10px; }
-select { font-size: 80%; }
-.dataTables_paginate .paging_simple_numbers .paginate_button .dataTables_info{ font-size: 50%; }
+select { font-size: 80%; line-height: 1.65; padding: 0 0.1em;}
+select label{ font-size: 80%; }
+.dataTables_paginate { font-size: 50%; }
+.paging_simple_numbers { font-size: 50%; }
+.paginate_button { font-size: 50%; }
+.dataTables_info { font-size: 50%; }
 
 .features li {
 /*     width: calc(33.33333% - 2em); */
