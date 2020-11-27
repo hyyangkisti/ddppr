@@ -26,3 +26,8 @@ select label{ font-size: 6px; }
     width: calc(100% + +60%);
     margin: 0 0 3em -30%;
 }
+.dt-button{
+    border: None;
+    height: -0.4em;
+    margin: -2em -2em -2em -2em;
+}

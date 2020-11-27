@@ -52,8 +52,8 @@ $(document).ready(function () {
                     }
                 },
                 dom : 'Blfrtip',
-                buttons:[{
-                }]
+//                 buttons:[{
+//                 }]
             });
             $('#DrugTB').DataTable().ajax.reload();
             
@@ -98,8 +98,8 @@ $(document).ready(function () {
                     }
                 },
                 dom : 'Blfrtip',
-                buttons:[{
-                }]
+//                 buttons:[{
+//                 }]
             });
             $('#ProteinTB').DataTable().ajax.reload();
             
@@ -175,8 +175,8 @@ $(document).ready(function () {
             }
         },
         dom : 'Blfrtip',
-        buttons:[{
-        }]
+//         buttons:[{
+//         }]
     });
 
 
@@ -223,8 +223,8 @@ $(document).ready(function () {
             }
         },
         dom : 'Blfrtip',
-        buttons:[{
-    	}]
+//         buttons:[{
+//     	}]
     });
         /* Column별 검색기능 추가 */
     $('#ProteinTB_filter').prepend('<select id="ProteinTBselect"></select>');
