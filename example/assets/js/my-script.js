@@ -69,7 +69,7 @@ $(document).ready(function () {
             });
             
             $('#ProteinTB').DataTable().destroy();
-            var table = $('#ProteinTB').DataTable({
+            var PRtable = $('#ProteinTB').DataTable({
                 ajax: {
                     'url':protein_json, 
                     'dataSrc':''
@@ -111,7 +111,7 @@ $(document).ready(function () {
 
             $('#ProteinTB_filter input').unbind().bind('keyup', function () {
                 var colIndex = document.querySelector('#ProteinTBselect').selectedIndex;
-                table.column(colIndex).search(this.value).draw();
+                PRtable.column(colIndex).search(this.value).draw();
             });
 
 
@@ -194,7 +194,7 @@ $(document).ready(function () {
     });
     
     // ************* PROTEIN ***************
-    var table = $('#ProteinTB').DataTable({
+    var PRtable = $('#ProteinTB').DataTable({
         ajax: {
             'url':'json/protein/drugs_COVID_19.json', 
             'dataSrc':''
@@ -234,6 +234,6 @@ $(document).ready(function () {
     
     $('#ProteinTB_filter input').unbind().bind('keyup', function () {
         var colIndex = document.querySelector('#ProteinTBselect').selectedIndex;
-        table.column(colIndex).search(this.value).draw();
+        PRtable.column(colIndex).search(this.value).draw();
     });
 });
