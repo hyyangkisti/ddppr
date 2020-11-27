@@ -31,3 +31,7 @@ select label{ font-size: 6px; }
     height: -0.4em;
     margin: -2em -2em -2em -2em;
 }
+#main input{
+    height: 16px;
+    font-size: 6px;
+}
