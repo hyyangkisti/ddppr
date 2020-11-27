@@ -179,7 +179,7 @@ $(document).ready(function () {
     });
     
     $('.dataTables_filter input').unbind().bind('keyup', function () {
-        var colIndex = document.querySelector('#select').selectedIndex;
+        var colIndex = document.querySelector('#DrugTBselect').selectedIndex;
         table.column(colIndex).search(this.value).draw();
     });
     
@@ -223,7 +223,7 @@ $(document).ready(function () {
     });
     
     $('.dataTables_filter input').unbind().bind('keyup', function () {
-        var colIndex = document.querySelector('#select').selectedIndex;
+        var colIndex = document.querySelector('#ProteinTBselect').selectedIndex;
         table.column(colIndex).search(this.value).draw();
     });
 });
