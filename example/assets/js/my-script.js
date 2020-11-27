@@ -51,7 +51,7 @@ $(document).ready(function () {
                         "previous": "Previous"
                     }
                 },
-                dom : 'Blfrtip',
+                dom : 'lfrtip'
 //                 buttons:[{
 //                 }]
             });
@@ -97,7 +97,7 @@ $(document).ready(function () {
                         "previous": "Previous"
                     }
                 },
-                dom : 'Blfrtip',
+                dom : 'lfrtip'
 //                 buttons:[{
 //                 }]
             });
@@ -174,7 +174,7 @@ $(document).ready(function () {
                 "previous": "Previous"
             }
         },
-        dom : 'Blfrtip',
+        dom : 'lfrtip'
 //         buttons:[{
 //         }]
     });
@@ -222,7 +222,7 @@ $(document).ready(function () {
                 "previous": "Previous"
             }
         },
-        dom : 'Blfrtip',
+        dom : 'lfrtip'
 //         buttons:[{
 //     	}]
     });
