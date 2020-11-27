@@ -53,9 +53,6 @@ $(document).ready(function () {
                 },
                 dom : 'Blfrtip',
                 buttons:[{
-                    extend:    'csvHtml5',
-                    text:      '<i class="fa fa-file-text-o"></i>',
-                    titleAttr: 'CSV'
                 }]
             });
             $('#DrugTB').DataTable().ajax.reload();
@@ -157,9 +154,6 @@ $(document).ready(function () {
         },
         dom : 'Blfrtip',
         buttons:[{
-            extend:    'csvHtml5',
-            text:      '<i class="fa fa-file-text-o"></i>',
-            titleAttr: 'CSV'
         }]
     });
 
