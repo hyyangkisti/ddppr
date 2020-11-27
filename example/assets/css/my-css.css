@@ -16,16 +16,18 @@ select label{ font-size: 6px; }
 .paginate_button { font-size: 6px; }
 .dataTables_info { font-size: 6px; }
 
-.features li {
-    width: calc(45% - 2em);
-    margin-left: .2em;
-/*     margin-top: 3em; */
-/*     padding: 0; */
-}
 .features {
     width: calc(100% + +60%);
     margin: 0 0 3em -30%;
 }
+
+.features li {
+    width: calc(37% - 2em);
+    margin-left: .2em;
+/*     margin-top: 3em; */
+/*     padding: 0; */
+}
+
 .dt-button{
     border: None;
     height: -0.4em;
