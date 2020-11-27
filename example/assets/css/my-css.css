@@ -1,5 +1,12 @@
 th { font-size: 11px; }
 td { font-size: 10px; }
 select { font-size: 80%; }
-dataTables_paginate paging_simple_numbers { font-size: 50%; }
-dataTables_info { font-size: 50%; }
+.dataTables_paginate .paging_simple_numbers { font-size: 50%; }
+.dataTables_info { font-size: 50%; }
+
+.features li {
+/*     width: calc(33.33333% - 2em); */
+    margin-left: .2em;
+/*     margin-top: 3em; */
+/*     padding: 0; */
+}
