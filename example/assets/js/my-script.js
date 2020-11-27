@@ -37,18 +37,18 @@ $(document).ready(function () {
                     {"data": "corr"}
                 ],
                 "language": {
-                    "emptyTable": "데이터가 없어요.",
+                    "emptyTable": "No table.",
                     "lengthMenu": "_MENU_ / page",
-                    "info": "현재 _START_ - _END_ / _TOTAL_건",
+                    "info": "_START_ - _END_ / _TOTAL_ items",
                     "infoEmpty": "데이터 없음",
-                    "infoFiltered": "( _MAX_건의 데이터에서 필터링됨 )",
-                    "search": "에서 검색: ",
-                    "zeroRecords": "일치하는 데이터가 없어요.",
+                    "infoFiltered": "(Filtered from _MAX_ )",
+                    "search": "search: ",
+                    "zeroRecords": "No matched.",
                     "loadingRecords": "로딩중...",
                     "processing":     "잠시만 기다려 주세요...",
                     "paginate": {
-                        "next": "다음",
-                        "previous": "이전"
+                        "next": "Next",
+                        "previous": "Previous"
                     }
                 },
                 dom : 'Blfrtip',
