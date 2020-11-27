@@ -3,6 +3,7 @@ td { font-size: 10px; }
 select { font-size: 50%; line-height: 1.65; width: 80%; padding: 0 1em;}
 select label{ font-size: 50%; }
 .dataTables_length label {font-size: 70%;}
+.dataTables_filter label {font-size: 70%;}
 .dataTables_paginate { font-size: 50%; }
 .paging_simple_numbers { font-size: 50%; }
 .paginate_button { font-size: 50%; }
