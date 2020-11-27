@@ -38,7 +38,7 @@ $(document).ready(function () {
                 ],
                 "language": {
                     "emptyTable": "No table.",
-                    "lengthMenu": "_MENU_ / page",
+                    "lengthMenu": "_MENU_ items / page",
                     "info": "_START_ - _END_ / _TOTAL_ items",
                     "infoEmpty": "No data",
                     "infoFiltered": "(Filtered from _MAX_ )",
@@ -84,7 +84,7 @@ $(document).ready(function () {
                 ],
                 "language": {
                     "emptyTable": "No table.",
-                    "lengthMenu": "_MENU_ / page",
+                    "lengthMenu": "_MENU_ items / page",
                     "info": "_START_ - _END_ / _TOTAL_ items",
                     "infoEmpty": "No data",
                     "infoFiltered": "(Filtered from _MAX_ )",
@@ -161,7 +161,7 @@ $(document).ready(function () {
         ],
         "language": {
             "emptyTable": "No table.",
-            "lengthMenu": "_MENU_ / page",
+            "lengthMenu": "_MENU_ items / page",
             "info": "_START_ - _END_ / _TOTAL_ items",
             "infoEmpty": "No data",
             "infoFiltered": "(Filtered from _MAX_ )",
@@ -209,7 +209,7 @@ $(document).ready(function () {
         ],
         "language": {
             "emptyTable": "No table.",
-            "lengthMenu": "_MENU_ / page",
+            "lengthMenu": "_MENU_ items / page",
             "info": "_START_ - _END_ / _TOTAL_ items",
             "infoEmpty": "No data",
             "infoFiltered": "(Filtered from _MAX_ )",
