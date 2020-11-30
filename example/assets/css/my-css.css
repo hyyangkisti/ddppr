@@ -1,4 +1,4 @@
-/* 
+
 /* th { font-size: 11px; }
 td { font-size: 10px; } 
 tfoot th { font-size: 10px; } */
@@ -25,25 +25,29 @@ select label{ font-size: 6px; }
     height: 16px;
     font-size: 6px;
 } */
-select { font-size: 10px; line-height: 1.6; width: 100%; padding: inherit 4em; }
-search { font-size: 10px; height: 60%; border-width: 1px}
+select { font-size: 8px; line-height: 1.6; width: 100%; padding: inherit 4em; }
+search { font-size: 8px; height: 60%; border-width: 1px}
 .dataTables_filter select { width: 100%; }
-select label{ font-size: 10px; }
-.dataTables_length label {font-size: 10px; }
-.dataTables_filter label {font-size: 10px; }
-.dataTables_paginate { font-size: 10px; }
-.paging_simple_numbers { font-size: 10px; }
-.paginate_button { font-size: 10px; }
-.dataTables_info { font-size: 10px; }
+select label{ font-size: 8px; }
+.dataTables_length label {font-size: 8px; }
+.dataTables_filter label {font-size: 8px; }
+.dataTables_paginate { font-size: 8px; }
+.paging_simple_numbers { font-size: 8px; }
+.paginate_button { font-size: 8px; }
+.dataTables_info { font-size: 8px; }
 #main input{
     height: 16px;
-    font-size: 10px;
+    font-size: 8px;
 }
 
+.spotlight .content table{
+    width: calc(100% + +50%);
+    margin: 0 0 3em -25%;
+}
 
 .features {
-    width: calc(100% + +60%);
-    margin: 0 0 3em -30%;
+    width: calc(100% + +50%);
+    margin: 0 0 3em -25%;
 }
 .features li {
     width: calc(37.5% - 2em);
@@ -59,4 +63,3 @@ select label{ font-size: 10px; }
 }
 
 
- */
