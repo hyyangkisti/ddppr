@@ -9,16 +9,42 @@ $(document).ready(function () {
         select.append(options);
         select.selectpicker('refresh');
     }
+    
+    
+    /* 대기 알람 기능 추가 */
+    (function($) {
+        showSwal = function(type) {
+            'use strict';
+            if (type === 'auto-close') {
+                swal({
+                    title: 'Wait a few seconds!',
+                    text: 'We are fetching the result, please be patient. I will close in 2 seconds.',
+                    timer: 2000,
+                    button: false
+                }).then(function() {},
+                    // handling the promise rejection
+                    function(dismiss) {
+                        if (dismiss === 'timer') {
+                            console.log('I was closed by the timer')
+                    }}
+            )}
+            else{
+                swal("Error occured !");
+            }
+        }
+    })(jQuery);
 
     const url = 'json/disease.json';
     $.getJSON(url, function (items) {loadSelectItems($('#Diseases-sp'), items)});
-    
     
     //////////////////////////////// Action for select disease
     $(function() {
         $('#Diseases-sp').on("changed.bs.select", function(e, clickedIndex) {
             const drug_json = 'json/drug/drugs_' + this.value + '.json';
             const protein_json = 'json/protein/drugs_' + this.value + '.json';
+            
+            
+            showSwal('auto-close')
             
             // ************* DRUG ***************
             $('#DrugTB').DataTable().destroy();
@@ -257,4 +283,5 @@ $(document).ready(function () {
         var colIndex = document.querySelector('#ProteinTBselect').selectedIndex;
         PRtable.column(colIndex).search(this.value).draw();
     });
-});
+    
+}); // Document end
