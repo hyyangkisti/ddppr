@@ -6,6 +6,11 @@ th { font-size: 13px; }
 td { font-size: 12px; }
 tfoot th { font-size: 12px; }
 
+.table {
+    width: max-content;
+    margin: auto;
+}
+
 select { font-size: 12px; line-height: 1.6; width: 100%; padding: inherit 4em; }
 search { font-size: 12px; height: 100%; border-width: .5px; background-size: 12px; }
 .dataTables_filter select { width: 100%; }
