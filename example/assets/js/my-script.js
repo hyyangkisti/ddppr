@@ -47,7 +47,7 @@ $(document).ready(function () {
             
             showSwal('auto-close')
             
-            setTimeout(function() {}, 100); // 3000ms(3초)가 경과하면 이 함수가 실행됩니다.
+            setTimeout(function() {}, 2000); // 3000ms(3초)가 경과하면 이 함수가 실행됩니다.
             
             // ************* DRUG ***************
             $('#DrugTB').DataTable().destroy();
