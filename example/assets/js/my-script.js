@@ -28,7 +28,7 @@ $(document).ready(function () {
 //                         if (dismiss === 'timer') {
 //                             console.log('I was closed by the timer')
 //                     }}
-            )}
+            }
             else{
                 swal("Error occured !");
             }
