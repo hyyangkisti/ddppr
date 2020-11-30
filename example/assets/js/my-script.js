@@ -19,7 +19,7 @@ $(document).ready(function () {
                 swal({
                     title: 'Wait a few seconds!',
                     text: 'We are fetching the result, please be patient. I will close in 2 seconds.',
-                    timer: 2000,
+                    timer: 3000,
                     button: false
                 })
 //                     .then(function() {},
@@ -46,6 +46,8 @@ $(document).ready(function () {
             
             
             showSwal('auto-close')
+            
+            setTimeout(function() {}, 100); // 3000ms(3초)가 경과하면 이 함수가 실행됩니다.
             
             // ************* DRUG ***************
             $('#DrugTB').DataTable().destroy();
