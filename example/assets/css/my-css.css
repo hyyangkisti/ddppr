@@ -6,13 +6,8 @@ th { font-size: 13px; }
 td { font-size: 12px; }
 tfoot th { font-size: 12px; }
 
-#main select {
-    background-size: contain; 
-    background: auto;
-    background-size: 12px;
-}
 select { font-size: 12px; line-height: 1.6; width: 100%; padding: inherit 4em; }
-search { font-size: 12px; height: 60%; border-width: .5px}
+search { font-size: 12px; height: 100%; border-width: .5px; background-size: 12px; }
 .dataTables_filter select { width: 100%; }
 select label{ font-size: 12px; }
 .dataTables_length label {font-size: 12px; }
