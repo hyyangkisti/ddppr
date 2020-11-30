@@ -41,8 +41,7 @@ select label{ font-size: 8px; }
 }
 
 .spotlight .content table{
-    width: calc(100% + +50%);
-    margin: 0 0 3em -25%;
+    width: 90%;
 }
 
 .features {
