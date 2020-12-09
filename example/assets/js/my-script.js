@@ -59,6 +59,12 @@ $(document).ready(function () {
                 responsive: true,
                 orderMulti: true,
                 order : [[0, 'asc']],
+                columnDefs: [
+                            {
+                                targets: -1,
+                                className: 'dt-body-left'
+                            }
+                          ],
                 columns: [
                     {"data": "No"},
                     {"data": "item"},
@@ -111,6 +117,12 @@ $(document).ready(function () {
                 responsive: true,
                 orderMulti: true,
                 order : [[0, 'asc']],
+                columnDefs: [
+                            {
+                                targets: -1,
+                                className: 'dt-body-left'
+                            }
+                          ],
                 columns: [
                     {"data": "No"},
                     {"data": "item"},
@@ -192,6 +204,12 @@ $(document).ready(function () {
         responsive: true,
         orderMulti: true,
         order : [[0, 'asc']],
+        columnDefs: [
+                            {
+                                targets: -1,
+                                className: 'dt-body-left'
+                            }
+                          ],
         columns: [
             {"data": "No"},
             {"data": "item"},
@@ -247,6 +265,12 @@ $(document).ready(function () {
         responsive: true,
         orderMulti: true,
         order : [[0, 'asc']],
+        columnDefs: [
+                            {
+                                targets: -1,
+                                className: 'dt-body-left'
+                            }
+                          ],
         columns: [
             {"data": "No"},
             {"data": "item"},
