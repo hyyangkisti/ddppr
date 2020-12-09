@@ -16,7 +16,7 @@ tfoot th { font-size: 17px; }
     color: white;
 }
 button{
-    background-color: #f3969a; 
+    background-color: #f3969a !important;
 }
 
 
