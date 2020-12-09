@@ -45,22 +45,22 @@ select label{ font-size: 12px; }
 }
 
 
-table thead #No {
+table thead tr #No {
     width: 5%;
 }
 
-table thead #Item1 {
+table thead tr #Item1 {
     width: 60%;
 }
 
-table thead #Item2 {
+table thead tr #Item2 {
     width: 85%;
 }
 
-table thead #PA {
+table thead tr #PA {
     width: 25%;
 }
 
-table thead #corr {
+table thead tr #corr {
     width: 10%;
 }
