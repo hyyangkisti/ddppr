@@ -61,7 +61,11 @@ $(document).ready(function () {
                 order : [[0, 'asc']],
                 columnDefs: [
                             {
-                                targets: -1,
+                                targets: 1,
+                                className: 'dt-body-left'
+                            },
+                            {
+                                targets: 2,
                                 className: 'dt-body-left'
                             }
                           ],
@@ -119,7 +123,7 @@ $(document).ready(function () {
                 order : [[0, 'asc']],
                 columnDefs: [
                             {
-                                targets: -1,
+                                targets: 1,
                                 className: 'dt-body-left'
                             }
                           ],
@@ -206,7 +210,11 @@ $(document).ready(function () {
         order : [[0, 'asc']],
         columnDefs: [
                             {
-                                targets: -1,
+                                targets: 1,
+                                className: 'dt-body-left'
+                            },
+                            {
+                                targets: 2,
                                 className: 'dt-body-left'
                             }
                           ],
@@ -267,7 +275,7 @@ $(document).ready(function () {
         order : [[0, 'asc']],
         columnDefs: [
                             {
-                                targets: -1,
+                                targets: 1,
                                 className: 'dt-body-left'
                             }
                           ],
