@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Disease Drug Protein Potential Relationship based on machine learning analysis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="vendor/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+<!--     <link rel="stylesheet" type="text/css" href="css/bootstrap-select.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src='vendor/js/jquery-3.3.1.min.js'></script>
+    <script src="vendor/js/jquery.dataTables.js"></script>
+    <script src="vendor/js/dataTables.responsive.min.js"></script>
+    <script src="vendor/js/dataTables.buttons.min.js"></script>
+	<script src="vendor/js/buttons.html5.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    
+</head>
+    
+    
+
+<body>
+    <div class="wrap">
+        <h4>Disease-Drug-Protein potential relationship based on Machine Learning Analysis</h4>
+        <text>This Disease-Drug-Protein potential relationship is exported from Word Embedding model with PubMed 10 Years (2010~2019).</text>
+    </div>
+    <div class="wrap">
+        <h6>Diseases, Drugs and Proteins</h6>
+        <div class="container-wrapper">
+            <label>Diseases</label>
+            <select class="selectpicker form-control" id="Diseases-sp" data-live-search="true" title="Select a disease" data-size="5"></select>
+
+            <label>Drugs</label>
+            <select class="selectpicker form-control" id="Drugs-sp" data-container="body" data-live-search="true" title="Select a drug" data-hide-disabled="true" data-size="5"></select>
+
+            <label>Proteins</label>
+            <select class="selectpicker form-control" id="Proteins-sp" data-container="body" data-live-search="true" title="Select a protein" data-hide-disabled="true" data-size="5"></select>
+        </div>
+        
+<!--         <h1>Disease-Drug correlation</h1>
+        <table id="DiToDr" class="display" style="width:100%;">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>disease</th>
+                    <th>drug</th>
+                    <th>PA</th>
+                    <th>corr</th>
+                    <th data-orderable="false">PA</th>
+                    <th data-orderable="false">corr</th>
+                    <th>date</th>
+                    <th data-orderable="false">ip_address</th>
+                    <th>money</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th colspan="2" style="text-align:right;white-space:nowrap;">TOTAL : </th>
+                    <th colspan="6" style="text-align:left;white-space:nowrap;"></th>
+                </tr>
+            </tfoot>
+        </table> -->
+    </div>
+</body>
+
+</html>
