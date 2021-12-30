@@ -1,0 +1,93 @@
+
+/* th { font-size: 11px; }
+td { font-size: 10px; } 
+tfoot th { font-size: 10px; } */
+th { font-size: 19px; }
+td { font-size: 17px; }
+tfoot th { font-size: 17px; }
+
+.table {
+    width: max-content;
+    margin: auto;
+}
+
+.scrolling-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .card {
+    display: inline-block;
+  }
+}
+
+#vg-tooltip-element table tr td.value {
+    font-size: 13px;
+}
+#vg-tooltip-element table tr td.key {
+    font-size: 13px;
+}
+
+.filter-option-inner-inner{
+    font-size: 25px;
+    color: white;
+}
+button{
+    background-color: #f3969a !important;
+}
+
+
+select { font-size: 17px; line-height: 1.6; width: 100%; padding: inherit 4em; }
+search { font-size: 17px; height: 100%; border-width: .5px; background-size: 12px; }
+.dataTables_filter select { width: 100%; }
+select label{ font-size: 17px; }
+.dataTables_length label {font-size: 17px; }
+.dataTables_filter label {font-size: 17px; }
+.dataTables_paginate { font-size: 17px; }
+.paging_simple_numbers { font-size: 17px; }
+.paginate_button { font-size: 17px; }
+.dataTables_info { font-size: 17px; }
+#main input{
+    height: 20px;
+    font-size: 17px;
+}
+
+
+.features {
+    width: calc(100% + +50%);
+    margin: 0 0 3em -25%;
+}
+.features li {
+    width: calc(37.5% - 2em);
+    margin-left: .2em;
+/*     margin-top: 3em; */
+/*     padding: 0; */
+}
+
+.dt-button{
+    border: None;
+    height: -0.4em;
+    margin: -2em -2em -2em -2em;
+}
+
+
+/*table thead tr #No {
+    width: 5%;
+}
+
+table thead tr #Item1 {
+    width: 60%;
+}
+
+table thead tr #Item2 {
+    width: 85%;
+}
+
+table thead tr #PA {
+    width: 25%;
+}
+
+table thead tr #corr {
+    width: 10%;
+}
+*/

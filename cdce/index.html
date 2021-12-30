@@ -1,0 +1,599 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>COVID-19 Drug Repurposing Evaluation (PK Prediction)</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap-select.css">
+
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/responsive.dataTables.min.css">
+
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+        <link rel="stylesheet" href="assets/css/my-css.css" />
+
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Header -->
+            <header id="header" class="alt">
+                <span class="logo"><img src="images/icon.png" alt="" /></span>
+                <h1>COVID-19 Drug Repurposing Evaluation (PK Prediction)</h1>
+                <p>
+                    The drug repurposing for COVID-19 is evaluated as aspect of prediction of human pharmacokinetics in comparison with IC50. This study is done by CNU, KRIBB and KISTI (2021). The candidate drugs close to COVID-19 are extracted by machine learning. If you want to know about the whole drug list of Disease Drug Protein Potential Relationship based on machine learning analysis, see <a href="../covid-19/">this page</a>.<br>
+                </p>
+            </header>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="#introduction_sec" class="active">Introduction</a></li>
+                    <li><a href="#Remdesivir_sec">Remdesivir</a></li>
+                    <li><a href="#Mefloquine_sec">Mefloquine</a></li>
+                    <li><a href="#Niclosamide_sec">Niclosamide</a></li>
+                    <li><a href="#Chloroquine_sec">Chloroquine</a></li>
+                    <li><a href="#Spiramycin_sec">Spiramycin</a></li>
+                    <li><a href="#Hydroxychloroquine_sec">Hydroxychloroquine</a></li>
+                    <li><a href="#Quinidine_sec">Quinidine</a></li>
+                    <li><a href="#Probenecid_sec">Probenecid</a></li>
+                    <li><a href="#Cyclosporine_sec">Cyclosporine</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main -->
+            <div id="main">
+
+                <!-- Introduction -->
+                <section id="introduction_sec" class="main special">
+                    <header class="major">
+                        <h2>The 9 Drugs Evaluation</h2>
+                        <ul class="statistics">
+                            <li class="style1">
+                                <span class="icon solid"><img src="images/disease_white.png" alt="" /></span>
+                                <strong>Covid-19</strong>
+                            </li>
+                            <li class="style2">
+                                <span class="icon"><img src="images/drug_white.png" alt="" /></span>
+                                <strong>Drug</strong>
+                            </li>
+                            <!-- <li class="style3">
+                                <span class="icon solid"><img src="images/protein_white.png" alt="" /></span>
+                                <strong>Protein</strong>
+                            </li> -->
+                        </ul>
+                        <p>The re-creation of drugs for the Covid-19 is evaluated as aspect of IC50 vs Predicted Human PK.<br /></p>
+                    </header>
+
+                    <footer class="major">
+                    </footer>
+                </section>
+
+                <!-- Total Drugs -->
+                <section id="Remdesivir_sec" class="main special">
+                    <div class="spotlight">
+                        <div class="content">
+                            <header class="major">
+                                <span class="logo"><img src="images/drug.png" alt="" /></span>
+                                <h2>Remdesivir</h2>
+                            </header>
+                            <div id="observablehq-Remdesivir_graph-b1c4b56a"></div>
+                            <script type="module">
+                                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+                                import define from "https://api.observablehq.com/@youngjinkim/for-kisti-visualization-2021@651.js?v=3";
+                                new Runtime().module(define, name => {
+                                  if (name === "Remdesivir_graph") return new Inspector(document.querySelector("#observablehq-Remdesivir_graph-b1c4b56a"));
+                                });
+                            </script>
+                            <div class="main special scrolling-wrapper">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Human Prediction PK</th>
+                                            <th>IC50 in Vero cell</th>
+                                            <th>IC50 in Calu-3 cell</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Cmax</td>
+                                            <td>4.21</td>
+                                            <td>57.30</td>
+                                            <td>6.53</td>
+                                        </tr>
+                                        <tr class="active-row">
+                                            <td>AUC</td>
+                                            <td>13.51</td>
+                                            <td>9625.77</td>
+                                            <td>1096.71</td>
+                                        </tr>
+                                        <!-- and so on... -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="Mefloquine_sec" class="main special">
+                    <div class="spotlight">
+                        <div class="content">
+                            <header class="major">
+                                <span class="logo"><img src="images/drug.png" alt="" /></span>
+                                <h2>Mefloquine</h2>
+                            </header>
+                            <div id="observablehq-Mefloquine_graph-22ddd4a8"></div>
+                            <script type="module">
+                                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+                                import define from "https://api.observablehq.com/@youngjinkim/for-kisti-visualization-2021@641.js?v=3";
+                                new Runtime().module(define, name => {
+                                  if (name === "Mefloquine_graph") return new Inspector(document.querySelector("#observablehq-Mefloquine_graph-22ddd4a8"));
+                                });
+                            </script>
+                            <div class="main special scrolling-wrapper">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Human Prediction PK<br>1250mg single</th>
+                                            <th>Human Prediction PK<br>250mg-weekly multiple</th>
+                                            <th>IC50 in Vero cell</th>
+                                            <th>IC50 in Calu-3 cell</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Cmax</td>
+                                            <td>2.8</td>
+                                            <td>1.4</td>
+                                            <td>86.3</td>
+                                            <td>996.6</td>
+                                        </tr>
+                                        <tr class="active-row">
+                                            <td>AUC</td>
+                                            <td>871</td>
+                                            <td>1338</td>
+                                            <td>138080</td>
+                                            <td>1594560</td>
+                                        </tr>
+                                        <!-- and so on... -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="Niclosamide_sec" class="main special">
+                    <div class="spotlight">
+                        <div class="content">
+                            <header class="major">
+                                <span class="logo"><img src="images/drug.png" alt="" /></span>
+                                <h2>Niclosamide</h2>
+                            </header>
+                            <div id="observablehq-Niclosamide_graph-22ddd4a8"></div>
+                            <script type="module">
+                                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+                                import define from "https://api.observablehq.com/@youngjinkim/for-kisti-visualization-2021@641.js?v=3";
+                                new Runtime().module(define, name => {
+                                  if (name === "Niclosamide_graph") return new Inspector(document.querySelector("#observablehq-Niclosamide_graph-22ddd4a8"));
+                                });
+                            </script>
+                            <div class="main special scrolling-wrapper">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Human Prediction PK<br>Rat based model</th>
+                                            <th>Human Prediction PK<br>Dog-Rat based model</th>
+                                            <th>IC50 in Vero cell</th>
+                                            <!-- <th>IC50/fu in Calu-3 cell</th> -->
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Cmax</td>
+                                            <td>0.01</td>
+                                            <td>0.04</td>
+                                            <td>57.25</td>
+                                            <!-- <td>171.74</td> -->
+                                        </tr>
+                                        <tr class="active-row">
+                                            <td>AUC</td>
+                                            <td>0.98</td>
+                                            <td>2.56</td>
+                                            <td>9618</td>
+                                            <!-- <td>28852</td> -->
+                                        </tr>
+                                        <!-- and so on... -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="Chloroquine_sec" class="main special">
+                    <div class="spotlight">
+                        <div class="content">
+                            <header class="major">
+                                <span class="logo"><img src="images/drug.png" alt="" /></span>
+                                <h2>Chloroquine</h2>
+                            </header>
+                            <div id="observablehq-Chloroquine_graph-22ddd4a8"></div>
+                            <script type="module">
+                                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+                                import define from "https://api.observablehq.com/@youngjinkim/for-kisti-visualization-2021@641.js?v=3";
+                                new Runtime().module(define, name => {
+                                  if (name === "Chloroquine_graph") return new Inspector(document.querySelector("#observablehq-Chloroquine_graph-22ddd4a8"));
+                                });
+                            </script>
+                            <div class="main special scrolling-wrapper">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Human Prediction PK</th>
+                                            <th>IC50 in Vero cell</th>
+                                            <th>IC50 in Calu-3 cell</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Cmax</td>
+                                            <td>2.03</td>
+                                            <td>9.67</td>
+                                            <td>91.81</td>
+                                        </tr>
+                                        <tr class="active-row">
+                                            <td>AUC</td>
+                                            <td>224.48</td>
+                                            <td>1624.56</td>
+                                            <td>15424.08</td>
+                                        </tr>
+                                        <!-- and so on... -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="Spiramycin_sec" class="main special">
+                    <div class="spotlight">
+                        <div class="content">
+                            <header class="major">
+                                <span class="logo"><img src="images/drug.png" alt="" /></span>
+                                <h2>Spiramycin</h2>
+                            </header>
+                            <div id="observablehq-Spiramycin_graph-22ddd4a8"></div>
+                            <script type="module">
+                                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+                                import define from "https://api.observablehq.com/@youngjinkim/for-kisti-visualization-2021@641.js?v=3";
+                                new Runtime().module(define, name => {
+                                  if (name === "Spiramycin_graph") return new Inspector(document.querySelector("#observablehq-Spiramycin_graph-22ddd4a8"));
+                                });
+                            </script>
+                            <div class="main special scrolling-wrapper">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Human Prediction PK</th>
+                                            <th>IC50 in Vero cell</th>
+                                            <!-- <th>IC50 in Calu-3 cell</th> -->
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Cmax</td>
+                                            <td>1.31</td>
+                                            <td>6.7</td>
+                                            <!-- <td>100</td> -->
+                                        </tr>
+                                        <tr class="active-row">
+                                            <td>AUC</td>
+                                            <td>160.54</td>
+                                            <td>1340</td>
+                                            <!-- <td>16780</td> -->
+                                        </tr>
+                                        <!-- and so on... -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="Hydroxychloroquine_sec" class="main special">
+                    <div class="spotlight">
+                        <div class="content">
+                            <header class="major">
+                                <span class="logo"><img src="images/drug.png" alt="" /></span>
+                                <h2>Hydroxychloroquine</h2>
+                            </header>
+                            <div id="observablehq-Hydroxychloroquine_graph-22ddd4a8"></div>
+                            <script type="module">
+                                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+                                import define from "https://api.observablehq.com/@youngjinkim/for-kisti-visualization-2021@641.js?v=3";
+                                new Runtime().module(define, name => {
+                                  if (name === "Hydroxychloroquine_graph") return new Inspector(document.querySelector("#observablehq-Hydroxychloroquine_graph-22ddd4a8"));
+                                });
+                            </script>
+                            <div class="main special scrolling-wrapper">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Human Prediction PK</th>
+                                            <th>IC50 in Vero cell</th>
+                                            <!-- <th>IC50 in Calu-3 cell</th> -->
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Cmax</td>
+                                            <td>1.51</td>
+                                            <td>1.4</td>
+                                            <!-- <td>6.53</td> -->
+                                        </tr>
+                                        <tr class="active-row">
+                                            <td>AUC</td>
+                                            <td>126.43</td>
+                                            <td>235.16</td>
+                                            <!-- <td>1096.71</td> -->
+                                        </tr>
+                                        <!-- and so on... -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="Quinidine_sec" class="main special">
+                    <div class="spotlight">
+                        <div class="content">
+                            <header class="major">
+                                <span class="logo"><img src="images/drug.png" alt="" /></span>
+                                <h2>Quinidine</h2>
+                            </header>
+                            <div id="observablehq-Quinidine_graph-22ddd4a8"></div>
+                            <script type="module">
+                                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+                                import define from "https://api.observablehq.com/@youngjinkim/for-kisti-visualization-2021@641.js?v=3";
+                                new Runtime().module(define, name => {
+                                  if (name === "Quinidine_graph") return new Inspector(document.querySelector("#observablehq-Quinidine_graph-22ddd4a8"));
+                                });
+                            </script>
+                            <div class="main special scrolling-wrapper">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Human Prediction PK</th>
+                                            <th>IC50 in Vero cell</th>
+                                            <!-- <th>IC50 in Calu-3 cell</th> -->
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Cmax</td>
+                                            <td>1.78</td>
+                                            <td>1.66</td>
+                                            <!-- <td>6.53</td> -->
+                                        </tr>
+                                        <tr class="active-row">
+                                            <td>AUC</td>
+                                            <td>225.35</td>
+                                            <td>278.88</td>
+                                            <!-- <td>1096.71</td> -->
+                                        </tr>
+                                        <!-- and so on... -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="Probenecid_sec" class="main special">
+                    <div class="spotlight">
+                        <div class="content">
+                            <header class="major">
+                                <span class="logo"><img src="images/drug.png" alt="" /></span>
+                                <h2>Probenecid</h2>
+                            </header>
+                            <div id="observablehq-Probenecid_graph-22ddd4a8"></div>
+                            <script type="module">
+                                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+                                import define from "https://api.observablehq.com/@youngjinkim/for-kisti-visualization-2021@641.js?v=3";
+                                new Runtime().module(define, name => {
+                                  if (name === "Probenecid_graph") return new Inspector(document.querySelector("#observablehq-Probenecid_graph-22ddd4a8"));
+                                });
+                            </script>
+                            <div class="main special scrolling-wrapper">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Human Prediction PK<br>1 g (q12h)</th>
+                                            <th>Human Prediction PK<br>500 mg (q6h)</th>
+                                            <th>IC50 in Vero cell</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Cmax</td>
+                                            <td>82.8</td>
+                                            <td>57.4</td>
+                                            <td>0.214</td>
+                                        </tr>
+                                        <tr class="active-row">
+                                            <td>AUC</td>
+                                            <td>10651.35</td>
+                                            <td>8461.23</td>
+                                            <td>42.80</td>
+                                        </tr>
+                                        <!-- and so on... -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="Cyclosporine_sec" class="main special">
+                    <div class="spotlight">
+                        <div class="content">
+                            <header class="major">
+                                <span class="logo"><img src="images/drug.png" alt="" /></span>
+                                <h2>Cyclosporine</h2>
+                            </header>
+                            <div id="observablehq-Cyclosporine_graph-22ddd4a8"></div>
+                            <script type="module">
+                                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+                                import define from "https://api.observablehq.com/@youngjinkim/for-kisti-visualization-2021@641.js?v=3";
+                                new Runtime().module(define, name => {
+                                  if (name === "Cyclosporine_graph") return new Inspector(document.querySelector("#observablehq-Cyclosporine_graph-22ddd4a8"));
+                                });
+                            </script>
+                            <div class="main special scrolling-wrapper">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Human Prediction PK</th>
+                                            <th>IC50 in Vero cell</th>
+                                            <!-- <th>IC50 in Calu-3 cell</th> -->
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Cmax</td>
+                                            <td>1.04</td>
+                                            <td>7.0</td>
+                                            <!-- <td>6.53</td> -->
+                                        </tr>
+                                        <tr class="active-row">
+                                            <td>AUC</td>
+                                            <td>78.66</td>
+                                            <td>1400</td>
+                                            <!-- <td>1096.71</td> -->
+                                        </tr>
+                                        <!-- and so on... -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                
+<!--                 <section id="corr_sec" class="main special">
+                    <header class="major">
+                        <h2>Correlation</h2>
+                    </header>
+                    <ul class="features">
+                        <li>
+                            <span class="logo solid major style1"><img src="images/drug.png" alt="" /></span>
+                            <h3>Drug</h3>
+                            <table id="DrugTB" class="table table-responsive display nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>item</th>
+                                        <th>PA</th>
+                                        <th>corr</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="4" style="text-align:right;white-space:nowrap;">**PA: Pharmacological Action</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </li>
+                    </ul>
+                    <ul class="features">
+                        <li>
+                            <span class="logo major style3"><img src="images/protein.png" alt="" /></span>
+                            <h3>Protein</h3>
+                            <table id="ProteinTB" class="table table-responsive display nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>item</th>
+                                        <th>corr</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="3" style="text-align:right;white-space:nowrap;"></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </li>
+                    </ul>
+                    <footer class="major">
+                    </footer>
+                </section> -->
+            </div>
+	
+            <!-- Footer -->
+            <footer id="footer">
+                <section>
+                    <h2>Director</h2>
+                    <dl class="alt">
+                        <dt>Office</dt>
+                        <dd>66 Hoegiro, Dongdaemun-gu, Seoul, 02456, Korea</dd>
+                        <dt>Email</dt>
+                        <dd><a href="#">hyyang@kisti.re.kr</a></dd>
+                    </dl>
+                </section>
+                <p class="copyright">&copy; KISTI, Future Technology Information Analysis Center. Design: <a href="https://kimyoungjin06.github.io/home">Young Jin Kim</a>.</p>
+            </footer>
+	
+        </div>
+	
+		<!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <script src='assets/vendor/js/jquery-3.3.1.min.js'></script>
+        <script src="assets/vendor/js/jquery.dataTables.js"></script>
+        <script src="assets/vendor/js/dataTables.responsive.min.js"></script>
+        <script src="assets/vendor/js/dataTables.buttons.min.js"></script>
+        <script src="assets/vendor/js/buttons.html5.min.js"></script>
+
+<!-- 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!--         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script> -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/bootstrap-select.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+        <script src="assets/js/my-script.js"></script>
+	
+	</body>
+</html>
