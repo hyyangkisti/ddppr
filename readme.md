@@ -16,6 +16,7 @@ This Disease-Drug-Protein potential relationship is exported from Word Embedding
 2.2 Apply reload action with splited data
 
 
+## [COVID-19 and Drugs and Proteins] (https://hyyangkisti.github.io/ddppr/covid-19/)
 
 ## [example site](https://kimyoungjin06.github.io/ddppr/)
 
