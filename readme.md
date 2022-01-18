@@ -18,7 +18,7 @@ This Disease-Drug-Protein potential relationship is exported from Word Embedding
 
 ## [COVID-19 and Drugs and Proteins] (https://hyyangkisti.github.io/ddppr/covid-19/)
 
-## [example site](https://kimyoungjin06.github.io/ddppr/)
+## [COVID-19 and Drug Repurposition Evaluation] (https://hyyangkisti.github.io/ddppr/cdce/)
 
 ## log
 
